@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:id="@+id/listItem"
+    android:clickable="true">
+    <!-- ListRow Left side Thumbnail image -->
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip"
+        android:clickable="false"
+        android:focusable="false">
+        <ImageView
+            android:id="@+id/userPhoto"
+            android:contentDescription="@string/app_name"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:clickable="false"
+            android:focusable="false"/>
+    </LinearLayout>
+    <!-- Rightend Arrow -->
+    <!-- City-->
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/userPhoto"
+        android:layout_marginLeft="75dip"
+        android:layout_centerVertical="true"
+        android:paddingBottom ="10dip"
+        android:text="userName"
+        android:textColor="#040404"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:typeface="sans"
+        android:phoneNumber="false"
+        android:clickable="false"
+        android:focusable="false"/>
+    <!-- Weather Information-->
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userName"
+        android:layout_alignLeft="@+id/userName"
+        android:paddingTop="5dip"
+        android:layout_centerHorizontal="true"
+        android:text="userId"
+        android:textColor="#343434"
+        android:textSize="15dip"
+        android:clickable="false"
+        android:focusable="false"/>
+</RelativeLayout>  
